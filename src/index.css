@@ -1,13 +1,100 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: '';
+  background: '';
+  line-height: 1.4;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgb(22, 19, 21);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 45px;
+}
+
+.nav {
+  width: 30%;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  list-style-type: none;
+  cursor: pointer;
+  margin-right: 45px;
+}
+
+.signIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  width: 350px;
+  margin: 120px 100px;
+  background-color: rgb(32, 30, 30);
+  border-radius: 20px;
+}
+
+.signIn h3{
+  margin-bottom: 10px;
+  color: white;
+}
+.signIn h4{
+  color: rgb(184, 178, 178);
+  cursor: pointer;
+  margin-top: 20px;
+}
+.email input, .password input {
+  border: 0.5px solid #BDBDBD;
+  border-radius: 5px;
+  padding: 8px 0px 8px 10px;
+  width: 246px;
+  background-color: rgb(32, 30, 30);
+  color: white;
+}
+
+.email p, .password p {
+    color: red;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+::placeholder {
+  color: rgb(184, 178, 178);
+}
+
+.submit button{
+  border: 0.5px solid #BDBDBD;
+  border-radius: 5px;
+  padding: 8px;
+  width: 246px;
+  margin: 10px 0 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer {
+  margin-left: 100px;
+  color: white;
+}
+
+.footer u {
+  cursor: pointer;
+}
+.checkBox label{
+  color: white;
 }
