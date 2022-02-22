@@ -33,6 +33,7 @@ body {
   margin-right: 45px;
 }
 
+
 .signIn {
   display: flex;
   flex-direction: column;
@@ -97,4 +98,16 @@ input:focus{
 }
 .checkBox label{
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav{
+    display: none;
+  }
+  .signIn{
+    margin: 40px 35px;
+  }
+  .footer{
+    margin: 10px 50px;
+  }
 }
